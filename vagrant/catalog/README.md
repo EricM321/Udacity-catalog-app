@@ -11,9 +11,9 @@ the database and **Flask** to handle the front end elements of the app.
 - Httplib2
 
 
-#####The database
+##### The database
 
-######Catalog table
+###### Catalog table
  Column  |    Type      |  Modifiers                       
 ---------|:------------:|-------------------
  id      | Integer      | primary_key
@@ -21,7 +21,7 @@ the database and **Flask** to handle the front end elements of the app.
  user_id | Integer      | ForeignKey
  user    | relationship 
 
-######Catalog item table
+###### Catalog item table
  Column       |      Type        |      Modifiers                       
 --------------|:----------------:|------------------------------------
  name         | String           | not nullable
@@ -33,7 +33,7 @@ the database and **Flask** to handle the front end elements of the app.
  user         | relationship     |
  created_date | DateTime         | default=datetime.datetime.utcnow
 
-######User table
+###### User table
  Column  |  Type   |  Modifiers                     
 ---------|:-------:|------------------
  id      | Integer | primary_key
@@ -42,7 +42,7 @@ the database and **Flask** to handle the front end elements of the app.
  picture | String  |
 
 
-####Running the code
+#### Running the code
 Create the database:
 ```
 $ python3 database_setup.py
